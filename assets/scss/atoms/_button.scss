@@ -1,0 +1,67 @@
+.btn{
+  cursor: pointer;
+
+  &.btn-toggle{
+    background: none;
+    border: none;
+    border-top: 1px solid $toggle-border;
+    border-bottom: 1px solid $toggle-border;
+    width: 100%;
+    text-align: left;
+    color: #424242;
+    font-size: 30px;
+  }
+
+  &:hover, &:active, &:focus{
+    outline: none;
+  }
+}
+
+.icon-arrow-down, .icon-arrow-up{
+  font-size: 2em !important;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.fp-controlArrow{
+  border-style: none;
+  font-size: 2em;
+
+  &.fp-next{
+    right: 10px;
+    transform: rotate(90deg);
+  }
+  &.fp-prev{
+    left: 10px;
+    transform: rotate(-90deg);
+  }
+}
+
+.fp-next:before, .fp-prev:before{
+  content: "\62";
+  font-family: "smarthub" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-btn{
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .btn.btn-toggle{
+    font-size: 20px;
+    display: flex;
+
+    .txt{
+      width: 100%;
+    }
+  }
+}

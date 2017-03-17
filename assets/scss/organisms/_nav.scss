@@ -1,0 +1,54 @@
+.nav{
+  position: fixed;
+  z-index: 9999;
+  padding: 4em;
+
+  img{
+    height: 25px;
+  }
+  button{
+    border: 1px solid white;
+    background: none;
+    color: white;
+    font-size: 1.2em;
+    padding: .5em;
+    font-weight: 100;
+    position: fixed;
+    bottom: 3em;
+    left: 3em;
+  }
+  .lang{
+    right: 0;
+    position: fixed;
+    padding-right: 4em;
+    top: 4em;
+
+    a{
+      color: white;
+      margin: 0 .5em;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+@media screen and (max-width: 950px){
+  .nav{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    top: 1em;
+    left: 1em;
+
+    button{
+      display: none;
+    }
+    .lang{
+      position: absolute;
+      right: 0;
+      top: 5px;
+      padding-right: 2em;
+    }
+  }
+}

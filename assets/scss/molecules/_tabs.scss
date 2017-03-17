@@ -1,0 +1,13 @@
+.toggle{
+  list-style-type: none;
+
+  .icon{
+    opacity: .5;
+  }
+  .content{
+    display: none;
+    padding: 1em;
+    color: $toggle-color;
+    font-size: 18px;
+  }
+}

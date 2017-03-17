@@ -1,0 +1,146 @@
+#disciplines{
+  .fp-tableCell{
+    display: flex;
+
+    .intro{
+      display: block;
+      width: 50%;
+      height: 100vh;
+      background-color: $background-secondary;
+
+      h2{
+        margin-bottom: .2em;
+      }
+      hr{
+        max-width: 140px;
+        margin: 0;
+        color: white;
+        border: 1px solid white;
+      }
+      .content{
+        margin-top: 50vh;
+        transform: translateY(-50%);
+        padding: 5em;
+
+        .bloc{
+          padding-left: 3em;
+          margin-top: 3em;
+        }
+      }
+    }
+    .description{
+      display: block;
+      width: 50%;
+      height: 100vh;
+      background: url("../img/img_dicipline.jpg") center no-repeat;
+      background-size: cover;
+    }
+    .img-graphic-arc{
+      background-size: cover;
+      height: 132px;
+      width: 123px;
+      position: absolute;
+      bottom: 147px;
+      left: 85vw;
+      z-index: 0;
+      transform: rotate(270deg);
+    }
+    .img-graphic-square{
+      background-size: cover;
+      height: 70px;
+      width: 70px;
+      position: absolute;
+      bottom: 102px;
+      left: 38vw;
+      z-index: 0;
+    }
+    .img-angle{
+      background-size: cover;
+      height: 201px;
+      width: 160px;
+      position: absolute;
+      top: 132px;
+      left: 48vw;
+      z-index: 0;
+    }
+  }
+  .second-slide{
+    background: url("../img/prism.png") center no-repeat;
+    background-size: 1200px;
+    background-position-y: 65%;
+
+    .title{
+      padding-top: 70px;
+      padding-left: 100px;
+      h2{
+        margin-bottom: 0;
+      }
+      hr{
+        width: 230px;
+      }
+    }
+    .img-graphic-arc{
+      background-size: cover;
+      height: 130px;
+      width: 130px;
+      position: absolute;
+      top: -40px;
+      z-index: -1;
+      right: 200px;
+    }
+    .img-wave{
+      background-size: cover;
+      height: 105px;
+      width: 242px;
+      position: absolute;
+      bottom: 100px;
+      z-index: -1;
+      left: 94vw;
+    }
+    .img-graphic-square{
+      background-size: cover;
+      height: 70px;
+      width: 70px;
+      position: absolute;
+      bottom: 50px;
+      z-index: -1;
+      right: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px){
+  #disciplines{
+    .first-slide{
+      background: $background-secondary;
+      padding-left:2em;
+      padding-right:2em;
+      padding-bottom: 250px;
+
+      .intro{
+        .content{
+          h2{
+            text-align: center;
+            margin-top:0;
+            padding-top: 1em;
+          }
+
+          hr{
+            text-align: center;
+          }
+        }
+      }
+      .description{
+        background: url('../img/img_dicipline.jpg') center center;
+        height: 250px;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        background-size: cover;
+      }
+    }
+    .second-slide{
+      display: none;
+    }
+  }
+}

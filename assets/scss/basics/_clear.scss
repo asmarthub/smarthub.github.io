@@ -1,0 +1,34 @@
+body{
+  color: $color;
+  margin: 0;
+}
+
+hr{
+  border-style: solid !important;
+}
+
+@media screen and (max-width: 950px){
+  section{
+    position: relative;
+  }
+  .slide{
+    display: block;
+    position: relative;
+  }
+  .only-desktop{
+    display: none !important;
+  }
+}
+@media screen and (min-width: 950px){
+  .only-mobile{
+    display: none !important;
+  }
+}
+
+p {
+  line-height: 1.8;
+}
+
+.section{
+  overflow: hidden;
+}

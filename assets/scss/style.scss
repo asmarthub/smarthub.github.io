@@ -1,0 +1,28 @@
+// lib
+@import "lib/fullpage";
+
+// setup
+@import "basics/basic";
+
+//atoms
+@import "atoms/button";
+@import "atoms/form";
+@import "atoms/graphic";
+@import "atoms/canvas";
+
+//molecules
+@import "molecules/tabs";
+@import "molecules/intro";
+@import "molecules/arrows";
+
+//organisms
+@import "organisms/nav";
+@import "organisms/section";
+@import "organisms/footer";
+
+//templates
+@import "templates/home";
+@import "templates/about";
+@import "templates/disciplines";
+@import "templates/process";
+@import "templates/contact";

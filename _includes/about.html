@@ -1,0 +1,104 @@
+<section class="section no-padding-right" id="about" data-anchor="about-section">
+    <div class="slide" id="slide1">
+        <div class="intro">
+            <div class="img-graphic-arc"></div>
+            <div class="content" id="about-intro">
+                <h2>
+                    {{ include.first_title }}
+                </h2>
+                <hr>
+                <p>
+                    {{ include.first_desc }}
+                </p>
+            </div>
+            <div class="img-graphic-square"></div>
+        </div>
+        <div class="description">
+            <div class="background">
+                <ul id="about-description">
+                    <li class="toggle active">
+                        <button class="btn btn-toggle">
+                            <span class="txt">
+                                {{ include.first_category_title }}
+                            </span>
+                            <span class="icone">
+                                    <span class="icon icon-minus"></span>
+                                </span>
+                        </button>
+                        <div class="content">
+                            {{ include.first_category_content }}
+                        </div>
+                    </li>
+                    <li class="toggle">
+                        <button class="btn btn-toggle">
+                            <span class="txt">
+                                {{ include.second_category_title }}
+                            </span>
+                            <span class="icone">
+                                    <span class="icon icon-plus"></span>
+                                </span>
+                        </button>
+                        <div class="content">
+                            {{ include.second_category_content }}
+                        </div>
+                    </li>
+                    <li class="toggle">
+                        <button class="btn btn-toggle">
+                            <span class="txt">
+                                {{ include.third_category_title }}
+                            </span>
+                            <span class="icone">
+                                    <span class="icon icon-plus"></span>
+                                </span>
+                        </button>
+                        <div class="content">
+                            {{ include.third_category_content }}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="arrow center">
+            <div class="arrowDown"><span class="icon-arrow-down"></span></div>
+            <div class="arrowUp"><span class="icon-arrow-up"></span></div>
+        </div>
+    </div>
+    <div class="slide" id="slide2">
+        <div class="left only-desktop">
+        </div>
+        <div class="center-slide">
+            <span class="icon-fill-4"></span>
+            <div class="title">
+                <h2>
+                    {{ include.second_title }}
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div class="right">
+            <p>
+                {{ include.second_desc }}
+            </p>
+        </div>
+        <div class="img-angle"></div>
+        <div class="arrow center">
+            <div class="arrowDown"><span class="icon-arrow-down"></span></div>
+            <div class="arrowUp"><span class="icon-arrow-up"></span></div>
+        </div>
+        <div class="img-graphic-arc"></div>
+    </div>
+    <div class="slide" id="slide3">
+        <div class="content">
+            <h2>
+                <div class="icon-icon-creation"></div>
+                {{ include.third_title }}
+            </h2>
+            <p>
+                {{ include.third_desc }}
+            </p>
+        </div>
+        <div class="img-graphic-square"></div>
+        <div class="img-wave"></div>
+        <div class="img-graphic-arc"></div>
+    </div>
+</section>
