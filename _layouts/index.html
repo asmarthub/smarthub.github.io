@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="{{ page.lang }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="{{ site.description }}" />
+        <title>Smarthub</title>
+
+        <script src="assets/js/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/jquery.easings.min.js"></script>
+        <script src="assets/js/scrolloverflow.min.js"></script>
+        <script src="assets/js/paper-full.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script type="text/paperscript" canvas="canvas" src="assets/js/paper-script.js"></script>
+
+        <link rel="stylesheet" href="assets/style.css">
+
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="/">
+                <img src="img/logo-smarthub-white.png" alt="smarthub">
+            </a>
+            <a href="#contact-section" class="nav-btn"><button>Say Hello !</button></a>
+            <div class="lang">
+                <a href="/">EN</a>
+                <a href="/fr">FR</a>
+            </div>
+        </nav>
+
+        <div id="fullpage">
+            <!--home-->
+            {%
+                include home.html
+
+                devise=page.home_devise
+            %}
+
+            <!--about-->
+            {%
+                include about.html
+
+                first_title=page.about.first_title
+                first_desc=page.about.first_desc
+                first_category_title=page.about.first_category_title
+                first_category_content=page.about.first_category_content
+                second_category_title=page.about.second_category_title
+                second_category_content=page.about.second_category_content
+                third_category_title=page.about.third_category_title
+                third_category_content=page.about.third_category_content
+                second_title=page.about.second_title
+                second_desc=page.about.second_desc
+                third_title=page.about.third_title
+                third_desc=page.about.third_desc
+            %}
+
+            <!--discipline-->
+            {%
+                include discipline.html
+
+                first_title=page.discipline.first_title
+                first_desc_title=page.discipline.first_desc_title
+                first_desc_content=page.discipline.first_desc_content
+                second_desc_title=page.discipline.second_desc_title
+                second_desc_content=page.discipline.second_desc_content
+                second_title=page.discipline.second_title
+            %}
+
+            <!--process-->
+            {%
+                include process.html
+
+                main_title=page.process.main_title
+                desc=page.process.desc
+            %}
+
+            <!--contact-->
+            {%
+                include contact.html
+
+                main_title=page.contact.main_title
+                desc=page.contact.desc
+                form_title=page.contact.form_title
+                form_option_desc=page.contact.form_option_desc
+                form_first_option=page.contact.form_first_option
+                form_second_option=page.contact.form_second_option
+                form_third_option=page.contact.form_third_option
+                form_fourth_option=page.contact.form_fourth_option
+                form_fifth_option=page.contact.form_fifth_option
+                form_name=page.contact.form_name
+            %}
+
+        </div>
+    </body>
+</html>

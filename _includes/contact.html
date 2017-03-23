@@ -1,0 +1,43 @@
+<div class="section" id="contact" data-anchor="contact-section">
+    <div class="intro only-desktop">
+        <div class="content">
+            <h2>
+                {{ include.main_title }}
+            </h2>
+            <p>
+                {{ include.desc }}
+            </p>
+            <p>{{ site.number }}</p>
+        </div>
+    </div>
+    <div class="send">
+        <div class="content">
+            <h2>
+                {{ include.form_title }}
+            </h2>
+            <form action="http://formspree.io/{{ site.email }}" method="post">
+                <select name="_subject">
+                    <option disabled selected>{{ include.form_option_desc }}</option>
+                    <option value="{{ include.form_first_option }}">{{ include.form_first_option }}</option>
+                    <option value="{{ include.form_second_option }}">{{ include.form_second_option }}</option>
+                    <option value="{{ include.form_third_option }}">{{ include.form_third_option }}</option>
+                    <option value="{{ include.form_fourth_option }}">{{ include.form_fourth_option }}</option>
+                    <option value="{{ include.form_fifth_option }}">{{ include.form_fifth_option }}</option>
+                </select>
+                <div class="form-group">
+                    <input type="text" name="name" class="name" placeholder="{{ include.form_name }}">
+                    <input type="text" name="_replyto" class="email" placeholder="Email">
+                </div>
+                <textarea name="message" rows="10" placeholder="Description (optional)"></textarea>
+                <input type="hidden" name="_next" value="{{ site.url }}">
+                <button type="submit">Send us a request</button>
+            </form>
+        </div>
+    </div>
+    <div class="arrow center last-slide">
+        <div class="arrowUp"><span class="icon-arrow-up"></span></div>
+    </div>
+    <footer>
+        Copyright © 2017 - Smarthub
+    </footer>
+</div>

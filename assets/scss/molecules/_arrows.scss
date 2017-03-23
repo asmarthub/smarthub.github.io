@@ -1,0 +1,28 @@
+.arrow.center{
+  bottom: 1em;
+  position: absolute;
+  display: inline-flex;
+  left: 50vw;
+  margin-left: -40px;
+
+  &.last-slide{
+    background: $background;
+    height: 75vh;
+    bottom: 0;
+    left: 50vw;
+    margin-left: -28px;
+    padding: 0.5em;
+    width: 40px;
+
+    .arrowUp{
+      position: absolute;
+      bottom: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 950px){
+  .arrow{
+    display: none !important;
+  }
+}

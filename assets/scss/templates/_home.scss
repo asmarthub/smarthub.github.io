@@ -1,0 +1,51 @@
+#home{
+  background-color: $background !important;
+  background: url('../img/icon_s.png') center no-repeat;
+
+  .content{
+    h1{
+      max-width: 200px;
+      margin: auto;
+      padding-right: 645px;
+      padding-top: 180px;
+    }
+  }
+
+  .img-graphic-square{
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 142px;
+    right: 195px;
+    z-index: 0;
+  }
+  .img-angle{
+    background-size: cover;
+    height: 230px;
+    width: 178px;
+    position: absolute;
+    top: 15px;
+    right: 160px;
+    z-index: 0;
+  }
+  .img-graphic-arc{
+    background-size: cover;
+    height: 142px;
+    width: 132px;
+    position: absolute;
+    bottom: 300px;
+    left: 0px;
+    z-index: 0;
+  }
+  .arrowDown{
+    z-index:10;
+  }
+}
+
+@media screen and (max-width: 950px){
+  #home{
+    min-height: 100vh;
+    background-size: 50vw;
+  }
+}

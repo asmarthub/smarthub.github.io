@@ -1,0 +1,25 @@
+.img-angle{
+  background-image: url("../img/graphic_angle.png");
+  opacity: 0.2;
+}
+
+.img-graphic-arc{
+  background-image: url("../img/graphic_arc.png");
+  opacity: 0.2;
+}
+
+.img-graphic-square{
+  background-image: url("../img/graphics_square.png");
+  opacity: 0.2;
+}
+
+.img-wave{
+  background-image: url("../img/graphic_wave.png");
+  opacity: 0.2;
+}
+
+@media screen and (max-width : 950px){
+  .img-angle, .img-graphic-arc, .img-graphic-square, .img-wave{
+    display: none;
+  }
+}

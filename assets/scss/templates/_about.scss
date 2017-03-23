@@ -1,0 +1,270 @@
+#about {
+  .fp-tableCell {
+    display: flex;
+
+    .intro {
+      display: block;
+      width: 50%;
+      height: 100vh;
+
+      hr {
+        width: 140px;
+        margin-left: 0;
+      }
+      .img-graphic-arc {
+        background-size: cover;
+        height: 150px;
+        width: 140px;
+        position: absolute;
+        top: 200px;
+        z-index: -1;
+      }
+      .content {
+        padding: 0 5em;
+        margin-top: 50vh;
+        transform: translateY(-50%);
+      }
+      .img-graphic-square {
+        background-size: cover;
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        bottom: 142px;
+        left: 195px;
+        z-index: -1;
+      }
+    }
+    .description {
+      display: block;
+      width: 50%;
+      height: 100vh;
+      background: $background-primary;
+
+      .background {
+        top: 0;
+        height: 100%;
+        padding: 0 5em;
+
+        ul {
+          margin-top: 50vh;
+          transform: translateY(-50%);
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  #slide2 {
+    display: flex;
+
+    .left {
+      display: block;
+      width: 50%;
+      height: 100vh;
+      background-color: black !important;
+      background: url('../img/img_who_we_are.jpg') left no-repeat;
+      opacity: 0.2;
+    }
+    .center-slide {
+      background: url('../img/who_we_are.png') center no-repeat;
+      background-position-y: 45%;
+      background-position-x: 52%;
+      background-size: 790px;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      left: 0;
+      margin-left: 100vw;
+      text-align: center;
+
+      .icon-fill-4{
+        position: absolute;
+        left: 50%;
+        top: 70px;
+        margin-left: -32px;
+        font-size: 4em;
+      }
+      .title{
+        position: absolute;
+        bottom: 100px;
+        left:300px;
+
+        h2{
+          margin-bottom: .5em;
+        }
+        hr{
+          width: 140px;
+          margin-left:0;
+          margin-top: 1em;
+        }
+      }
+    }
+    .right {
+      display: block;
+      width: 50%;
+      height: 100vh;
+      background: $background-secondary;
+
+      p{
+        position: absolute;
+        bottom:75px;
+        width: 45vw;
+        padding: 0 1em;
+      }
+    }
+    .arrow.center{
+      margin-left:99vw;
+    }
+    .img-angle{
+      background-size: cover;
+      height: 210px;
+      width: 162px;
+      position: absolute;
+      bottom: 170px;
+      z-index: -1;
+      left: 94vw;
+    }
+    .img-graphic-arc{
+      background-size: cover;
+      height: 173px;
+      width: 162px;
+      position: absolute;
+      top: 122px;
+      z-index: 0;
+      right: 100vw;
+      transform: rotate(90deg);
+    }
+  }
+  #slide3 {
+    .fp-tableCell {
+      background: url('../img/what_make_us_creative.png') center no-repeat;
+      .content {
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+        margin-top: 45vh;
+        transform: translateY(-50%);
+
+        h2 {
+          color: $toggle-border;
+        }
+      }
+    }
+    .img-graphic-square{
+      background-size: cover;
+      height: 70px;
+      width: 70px;
+      position: absolute;
+      top: 230px;
+      z-index: -1;
+      left: 208vw;
+    }
+    .img-wave{
+      background-size: cover;
+      height: 116px;
+      width: 180px;
+      position: absolute;
+      top: 145px;
+      z-index: -1;
+      right: 0;
+    }
+    .img-graphic-arc{
+      background-size: cover;
+      height: 130px;
+      width: 130px;
+      position: absolute;
+      bottom: -90px;
+      z-index: -1;
+      right: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px){
+  #about{
+    #slide1{
+      background: $background-primary;
+      padding: 0 1.5em 2em;
+
+      .content{
+        h2{
+          margin:0;
+          padding: 1em 0;
+          text-align: center;
+        }
+        hr{
+          text-align: center;
+          border-color: white;
+          border-style: solid;
+          width: 80%;
+        }
+        p{
+          margin-bottom: 4em;
+        }
+      }
+      ul{
+        margin:0;
+        padding: 0;
+      }
+    }
+    #slide2{
+      background: $background-secondary;
+      padding: 2em;
+      display: block;
+
+      .center-slide{
+        background: none;
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: block;
+        margin:0;
+        text-align: center;
+
+        .icon-fill-4, h2, hr{
+          position: relative;
+          left: inherit;
+          top: inherit;
+          margin: 1em 0;
+
+        }
+        .title{
+          position: relative;
+          left: inherit;
+          bottom: inherit;
+
+          hr{
+            margin: auto;
+            border-style: solid;
+            margin-top: 1em;
+          }
+        }
+      }
+      .right{
+        width: 100%;
+        height: auto;
+
+
+        p{
+          position: relative;
+          width: 100%;
+          bottom: inherit;
+        }
+      }
+    }
+    #slide3{
+      display: block;
+      background: $background;
+      padding: 2em;
+
+      h2{
+        text-align: center;
+        color: $toggle-border;
+
+        .icon-icon-creation{
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
