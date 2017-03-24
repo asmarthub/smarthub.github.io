@@ -6,24 +6,24 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="{{ site.description }}" />
-        <title>Smarthub</title>
+        <title>{{ site.title }}</title>
 
-        <script src="assets/js/jquery-3.1.1.min.js"></script>
-        <script src="assets/js/jquery.easings.min.js"></script>
-        <script src="assets/js/scrolloverflow.min.js"></script>
-        <script src="assets/js/paper-full.min.js"></script>
-        <script src="assets/js/app.js"></script>
-        <script type="text/paperscript" canvas="canvas" src="assets/js/paper-script.js"></script>
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/jquery.easings.min.js"></script>
+        <script src="/js/scrolloverflow.min.js"></script>
+        <script src="/js/paper-full.min.js"></script>
+        <script src="/js/app.js"></script>
+        <script type="text/paperscript" canvas="canvas" src="/js/paper-script.js"></script>
 
-        <link rel="stylesheet" href="assets/style.css">
-
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" type="image/png" href="img/icon_s.png" />
     </head>
     <body>
         <nav class="nav">
             <a href="/">
-                <img src="img/logo-smarthub-white.png" alt="smarthub">
+                <img src="/img/logo-smarthub-white.png" alt="smarthub">
             </a>
-            <a href="#contact-section" class="nav-btn"><button>Say Hello !</button></a>
+            <a href="#contact-section" class="nav-btn"><button>{{ page.contact.contact }}</button></a>
             <div class="lang">
                 <a href="/">EN</a>
                 <a href="/fr">FR</a>
@@ -90,6 +90,7 @@
                 form_fourth_option=page.contact.form_fourth_option
                 form_fifth_option=page.contact.form_fifth_option
                 form_name=page.contact.form_name
+                form_send=page.contact.form_send
             %}
 
         </div>
