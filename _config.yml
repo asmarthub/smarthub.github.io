@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Smarthub
-email: apayen+test@arbouin-consulting.com
+title: Smart Hub
+email: contact@asmarthub.com
 number: +33 6 88 52 49
-description:
+description: |
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
@@ -24,12 +24,32 @@ description:
 url: "http://smarthub.fr"
 
 # Build settings
-markdown: kramdown
+markdown:    kramdown
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+sass:
+  sass_dir: _sass/
+  style: compressed
+
 gems:
   - jekyll-feed
+
 exclude:
   - Gemfile
-  - Gemfile.lock
   - gulpfile.js
   - package.json
   - node_modules/
+  - README.md
+
+keep_files:   [".git", ".svn", ".gitignore"]
+
+# Markdown Processors
+kramdown:
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1

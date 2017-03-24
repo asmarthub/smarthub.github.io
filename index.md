@@ -2,10 +2,10 @@
 layout: index
 lang: en
 
-home_devise :
+home_devise : |
     be true, be right, <br>
     be simple.
-    
+
 about :
     first_title :
         What we do ?
@@ -78,6 +78,9 @@ process:
         throughout the project
         
 contact:
+    contact: |
+        Say Hello !
+
     main_title :
         Draw us a nice story, we design you a nice experience throughout the project.
     
@@ -107,4 +110,7 @@ contact:
         
     form_name:
         Your name
+        
+    form_send:
+        Send us a request
 ---

@@ -29,7 +29,7 @@ $(document).ready(function(){
     tab.toggle('#about');
 
     if (window.innerWidth > 950) {
-        $.getScript( "assets/js/jquery.fullPage.min.js", function(){
+        $.getScript( "/js/jquery.fullPage.min.js", function(){
             $(document).ready(function() {
                 $('#fullpage').fullpage({
                     loopHorizontal: false,

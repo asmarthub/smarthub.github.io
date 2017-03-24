@@ -3,15 +3,15 @@ layout: index
 permalink: fr.html
 lang: fr
 
-home_devise :
+home_devise : |
     be true, be right, <br>
     be simple.
-    
+
 about :
-    first_title :
+    first_title : |
         Que faisons-nous ?
     
-    first_desc :
+    first_desc : |
         Smart hub créé de meilleures expériences et du contenu de marque plus intéressant pour vos utilisateurs.
     
     first_category_title :
@@ -76,6 +76,8 @@ process:
         throughout the project
         
 contact:
+    contact: Dit Bonjour !
+    
     main_title:
         "Ecrivez-nous une belle histoire et nous vous créerons une belle expérience"
     
@@ -105,4 +107,7 @@ contact:
         
     form_name:
         Votre nom
+        
+    form_send:
+        Envoyer nous votre demande
 ---
