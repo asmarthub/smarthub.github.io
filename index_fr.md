@@ -76,7 +76,7 @@ process:
         throughout the project
         
 contact:
-    contact: Dit Bonjour !
+    contact: Dites Bonjour !
     
     main_title:
         "Ecrivez-nous une belle histoire et nous vous créerons une belle expérience"
