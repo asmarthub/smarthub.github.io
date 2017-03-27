@@ -82,7 +82,7 @@ contact:
         "Ecrivez-nous une belle histoire et nous vous créerons une belle expérience"
     
     desc:
-        Call us
+        Appelez nous au
         
     form_title:
         Envoyez-nous une demande
@@ -107,6 +107,12 @@ contact:
         
     form_name:
         Votre nom
+        
+    form_email:
+        Courriel
+        
+    form_description:
+        Description (optionnel)
         
     form_send:
         Envoyer nous votre demande

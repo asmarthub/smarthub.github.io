@@ -111,6 +111,12 @@ contact:
     form_name:
         Your name
         
+    form_email:
+        Email
+        
+    form_description:
+        Description (optional)
+        
     form_send:
         Send us a request
 ---

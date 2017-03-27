@@ -26,9 +26,9 @@
                 </select>
                 <div class="form-group">
                     <input type="text" name="name" class="name" placeholder="{{ include.form_name }}">
-                    <input type="text" name="_replyto" class="email" placeholder="Email">
+                    <input type="text" name="_replyto" class="email" placeholder="{{ include.form_email }}">
                 </div>
-                <textarea name="message" rows="10" placeholder="Description (optional)"></textarea>
+                <textarea name="message" rows="10" placeholder="{{ include.form_description }}"></textarea>
                 <input type="hidden" name="_next" value="{{ site.url }}">
                 <button type="submit">{{ include.form_send }}</button>
             </form>
