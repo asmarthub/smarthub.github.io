@@ -87,8 +87,11 @@ process:
 contact:
     contact: |
         Say Hello !
+        
+    all_rights:
+        All rights reserved.
 
-    main_title :
+    main_title:
         Draw us a nice story, we design you a nice experience throughout the project.
     
     desc:

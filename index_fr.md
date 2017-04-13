@@ -84,6 +84,9 @@ process:
         
 contact:
     contact: Dites Bonjour !
+        
+    all_rights:
+        Tous droits réservés.
     
     main_title:
         "Ecrivez-nous une belle histoire et nous vous créerons une belle expérience"
