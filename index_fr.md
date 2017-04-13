@@ -3,6 +3,12 @@ layout: index
 permalink: fr.html
 lang: fr
 
+title: |
+    Smart hub crée du contenu de marque intéressant pour vos utilisateurs.
+
+description: |
+    Construisons ensemble un produit répondant aux besoins de vos utilisateurs/clients autour de 3 axes : Définition utilisateurs, conceptualisation. Stratégie de contenu, définition de l'UI. Développements, pragmatiques.
+
 home_devise : |
     be true, be right, <br>
     be simple.

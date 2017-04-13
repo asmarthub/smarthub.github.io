@@ -2,6 +2,12 @@
 layout: index
 lang: en
 
+title: |
+    Smart hub creates better user experiences and more interesting brands.
+
+description: |
+    Let's build together a produit which respond to your user/clients' needs. Our prism: User definition, concepts. Content strategy, UI definition. "Prototyping", simple and pragmatic developments
+
 home_devise : |
     be true, be right, <br>
     be simple.

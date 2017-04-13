@@ -13,11 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Smart Hub
-email: contact@asmarthub.com
+email: hello@asmarthub.com
 number: +33 6 10 26 40 19
-description: |
-  Smart hub creates better user experiences and more interesting brands.
 
 url: "http://smarthub.fr"
 
@@ -32,6 +29,7 @@ sass:
 
 gems:
   - jekyll-feed
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
@@ -40,7 +38,7 @@ exclude:
   - node_modules/
   - README.md
 
-keep_files:   [".git", ".svn", ".gitignore"]
+keep_files:   [".git", ".gitignore"]
 
 # Markdown Processors
 kramdown:
